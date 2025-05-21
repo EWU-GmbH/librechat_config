@@ -1,5 +1,45 @@
 version: 1.2.4
 
+fileConfig:
+  endpoints:
+    all:
+      fileLimit: 50
+      fileSizeLimit: 100
+    openAI:
+      fileLimit: 50
+      fileSizeLimit: 100
+    google:
+      fileLimit: 50
+      fileSizeLimit: 100
+    anthropic:
+      fileLimit: 50
+      fileSizeLimit: 100
+    assistants:
+      fileLimit: 50
+      fileSizeLimit: 100
+    custom:
+      fileLimit: 50
+      fileSizeLimit: 100
+  fileLimit: 50
+  fileSizeLimit: 100
+  supportedMimeTypes: [
+    "image/jpeg", 
+    "image/png", 
+    "image/gif", 
+    "image/webp", 
+    "image/svg+xml", 
+    "text/plain", 
+    "text/css", 
+    "text/javascript", 
+    "text/html", 
+    "application/json", 
+    "application/pdf", 
+    "application/msword", 
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/vnd.ms-excel",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+  ]
+
 cache: true
 
 registration:
@@ -1208,7 +1248,6 @@ endpoints:
           - mistralai/mistral-large-2-instruct
           - mistralai/mistral-small-24b-instruct
           - mistralai/mixtral-8x22b-instruct-v0.1
-          - mistralai/mixtral-8x22b-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/embed-qa-4
@@ -1333,7 +1372,7 @@ endpoints:
           - sophosympatheia/rogue-rose-103b-v0.2:free
           - thudm/glm-4-32b:free
           - thudm/glm-z1-32b:free
-          - '---BETA---'
+                   - '---BETA---'
           - anthropic/claude-2.0:beta
           - anthropic/claude-2.1:beta
           - anthropic/claude-2:beta
@@ -1543,11 +1582,11 @@ endpoints:
           - qwen/qwen-turbo
           - qwen/qwen-vl-max
           - qwen/qwen-vl-plus
-          - qwen/qwen2.5-coder-7b-instruct
-          - qwen/qwen2.5-vl-32b-instruct
-          - qwen/qwen2.5-vl-72b-instruct
-          - qwen/qwq-32b
-          - qwen/qwq-32b-preview
+          - qwen2.5-coder-7b-instruct
+          - qwen2.5-vl-32b-instruct
+          - qwen2.5-vl-72b-instruct
+          - qwq-32b
+          - qwq-32b-preview
           - '---SAO10K---'
           - sao10k/fimbulvetr-11b-v2
           - sao10k/l3-euryale-70b
