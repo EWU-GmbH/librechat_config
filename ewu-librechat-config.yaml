@@ -56,13 +56,6 @@ fileConfig:
 
 cache: true
 
-rateLimit:
-  fileUpload:
-    max: 100
-    windowMs: 60000
-
-fileStrategy: "local"  # 'local' | 's3' | 'azure' | 'firebase'
-
 registration:
   socialLogins:
     - "discord"
