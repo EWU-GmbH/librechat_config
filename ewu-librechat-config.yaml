@@ -70,6 +70,19 @@ registration:
     - "openid"
 
 endpoints:
+  agents:
+    # Limit für rekursive Agent-Ausführung, Standard ist 25
+    recursionLimit: 50
+    # Maximales Limit für rekursive Agent-Ausführung, Standard ist 25
+    maxIterations: 50
+    # Timeout für Agent-Operationen in Millisekunden
+    timeout: 120000
+    langgraph:
+      recursionLimit: 50
+      options:
+        recursionLimit: 50
+        maxIterations: 50
+  
   custom:
     # APIpie
     # https://apipie.ai/dashboard/
@@ -938,14 +951,3 @@ endpoints:
       summaryModel: "mistral-small-latest"
       forcePrompt: false
       modelDisplayLabel: "Mistral"
-
-# Agent Configuration
-agents:
-  recursionLimit: 50
-  maxIterations: 50
-  timeout: 120000
-  langgraph:
-    recursionLimit: 50
-    options:
-      recursionLimit: 50
-      maxIterations: 50
