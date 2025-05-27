@@ -2003,12 +2003,12 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Grok"
 
-# Agent Configuration
-agents:
-  recursionLimit: 50
-  maxIterations: 50
-  timeout: 120000
-  langgraph:
-    recursionLimit: 50
-  options:
-    recursionLimit: 50
+    # Agent Configuration
+    agents:
+      recursionLimit: 50
+      maxIterations: 50
+      timeout: 120000
+      langgraph:
+      recursionLimit: 50
+    options:
+      recursionLimit: 50
