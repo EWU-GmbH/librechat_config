@@ -22,6 +22,11 @@ fileConfig:
       fileSizeLimit: 100
       rateLimitCount: 100
       rateLimitDuration: 60
+    Mistral:
+      fileLimit: 50
+      fileSizeLimit: 100
+      rateLimitCount: 100
+      rateLimitDuration: 60
     assistants:
       fileLimit: 50
       fileSizeLimit: 100
