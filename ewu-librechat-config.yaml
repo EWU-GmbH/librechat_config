@@ -920,6 +920,32 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Grok"
 
+    # Mistral AI
+    # https://console.mistral.ai/
+    - name: "Mistral"
+      apiKey: "${MISTRAL_API_KEY}"
+      baseURL: "https://api.mistral.ai/v1"
+      models:
+        default:
+          - codestral-2501
+          - codestral-latest
+          - ministral-3b
+          - ministral-8b
+          - mistral-large-2411
+          - mistral-large-latest
+          - mistral-small-24b-instruct-2501
+          - mistral-small-latest
+          - pixtral-12b-2409
+          - pixtral-large-2411
+          - pixtral-large-latest
+        fetch: false
+      titleConvo: true
+      titleModel: "mistral-small-latest"
+      summarize: false
+      summaryModel: "mistral-small-latest"
+      forcePrompt: false
+      modelDisplayLabel: "Mistral"
+
 # Agent Configuration
 agents:
   recursionLimit: 50
