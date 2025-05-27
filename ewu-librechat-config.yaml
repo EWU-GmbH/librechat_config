@@ -581,14 +581,7 @@ endpoints:
           - undi95/toppy-m-7b
           - xwin-lm/xwin-lm-70b
         fetch: false
-      dropParams:
-        - "stop"
-      titleConvo: true
-      titleModel: "openai/gpt-4o-mini"
-      summarize: false
-      summaryModel: "openai/gpt-4o-mini"
-      forcePrompt: false
-      modelDisplayLabel: "OpenRouter"
+      modelDisplayLabel: "APIpie"
 
     # Preplexity
     # Model list: https://docs.perplexity.ai/docs/model-cards
@@ -603,7 +596,7 @@ endpoints:
           - sonar-pro
           - sonar-reasoning
           - sonar-reasoning-pro
-        fetch: false # fetching list of models is not supported
+        fetch: false
       titleConvo: true
       titleModel: "llama-3.1-sonar-small-128k-chat"
       summarize: false
