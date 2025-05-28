@@ -72,16 +72,16 @@ registration:
 endpoints:
   agents:
     # Limit für rekursive Agent-Ausführung, Standard ist 25
-    recursionLimit: 50
+    recursionLimit: 30
     # Maximales Limit für rekursive Agent-Ausführung, Standard ist 25
-    maxIterations: 50
+    maxIterations: 30
     # Timeout für Agent-Operationen in Millisekunden
-    timeout: 120000
+    timeout: 60000
     langgraph:
-      recursionLimit: 50
+      recursionLimit: 30
       options:
-        recursionLimit: 50
-        maxIterations: 50
+        recursionLimit: 30
+        maxIterations: 30
   
   custom:
     # APIpie
