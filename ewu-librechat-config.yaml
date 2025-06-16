@@ -84,6 +84,22 @@ endpoints:
         maxIterations: 30
   
   custom:
+  # Flux
+  - name: "Flux"
+    apiKey: "${FLUX_API_KEY}"
+    baseURL: "https://api.flux.ai/v1"  # Angepasste URL basierend auf Flux API
+    models:
+      default:
+      - flux-kontext-pro
+      - flux-kontext-max
+      - flux-pro-1.1-ultra
+      - flux-pro-1.1
+      - flux-pro
+    fetch: false
+  titleConvo: true
+  titleModel: "flux-model"
+  modelDisplayLabel: "Flux"
+
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
