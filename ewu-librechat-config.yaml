@@ -78,12 +78,6 @@ endpoints:
       options:
         recursionLimit: 30
         maxIterations: 30
-    tools:
-      flux:
-        name: "FluxAPI"
-        description: "Generate high-quality images from text prompts using Flux AI"
-        apiKey: "${FLUX_API_KEY}"
-        baseUrl: "https://api.bfl.ai"
 
   custom:
     - name: "APIpie"
