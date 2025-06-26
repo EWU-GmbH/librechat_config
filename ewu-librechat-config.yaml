@@ -90,6 +90,7 @@ endpoints:
           - flux-pro-1.1-ultra
           - flux-pro-1.1
           - flux-pro
+          - flux-dev
       fetch: false
       titleConvo: true
       titleModel: "flux-model"
