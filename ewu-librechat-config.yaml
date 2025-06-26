@@ -80,33 +80,6 @@ endpoints:
         maxIterations: 30
 
   custom:
-    - name: "Flux"
-      apiKey: "${FLUX_API_KEY}"
-      baseURL: "https://api.bfl.ai/v1"
-      models:
-        default:
-          - flux-dev
-          - flux-pro
-          - flux-pro-1.1
-      fetch: false
-      titleConvo: false
-      modelDisplayLabel: "Flux"
-      headers:
-        "x-key": "${FLUX_API_KEY}"
-      dropParams:
-        - "max_tokens"
-        - "temperature"
-        - "top_p"
-        - "frequency_penalty"
-        - "presence_penalty"
-        - "stop"
-        - "stream"
-        - "messages"
-        - "model"
-      addParams:
-        prompt: ""
-        aspect_ratio: "1:1"
-
     - name: "APIpie"
       apiKey: "${APIPIE_API_KEY}"
       baseURL: "https://apipie.ai/v1/"
@@ -235,3 +208,15 @@ endpoints:
       summaryModel: "mistral-small-latest"
       forcePrompt: false
       modelDisplayLabel: "Mistral"
+
+    - name: "DALL-E"
+      apiKey: "${OPENAI_API_KEY}"
+      baseURL: "https://api.openai.com/v1"
+      models:
+        default:
+          - dall-e-3
+          - dall-e-2
+      fetch: false
+      titleConvo: false
+      modelDisplayLabel: "DALL-E"
+      iconURL: "https://cdn.openai.com/API/logo-assets/powered-by-openai-dark.png"
