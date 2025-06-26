@@ -82,7 +82,7 @@ endpoints:
   custom:
     - name: "Flux"
       apiKey: "${FLUX_API_KEY}"
-      baseURL: "https://api.flux.ai/v1"
+      baseURL: "https://api.bfl.ai/v1"
       models:
         default:
           - flux-kontext-pro
