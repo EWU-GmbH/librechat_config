@@ -85,16 +85,27 @@ endpoints:
       baseURL: "https://api.bfl.ai/v1"
       models:
         default:
-          - flux-kontext-pro
-          - flux-kontext-max
-          - flux-pro-1.1-ultra
-          - flux-pro-1.1
-          - flux-pro
           - flux-dev
+          - flux-pro
+          - flux-pro-1.1
       fetch: false
-      titleConvo: true
-      titleModel: "flux-model"
+      titleConvo: false
       modelDisplayLabel: "Flux"
+      headers:
+        "x-key": "${FLUX_API_KEY}"
+      dropParams:
+        - "max_tokens"
+        - "temperature"
+        - "top_p"
+        - "frequency_penalty"
+        - "presence_penalty"
+        - "stop"
+        - "stream"
+        - "messages"
+        - "model"
+      addParams:
+        prompt: ""
+        aspect_ratio: "1:1"
 
     - name: "APIpie"
       apiKey: "${APIPIE_API_KEY}"
