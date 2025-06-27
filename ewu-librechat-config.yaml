@@ -1,4 +1,16 @@
-version: 1.2.4
+version: 1.2.5
+
+# Interface-Konfiguration auf oberster Ebene (KORRIGIERT)
+interface:
+  endpointsMenu: true
+  modelSelect: true
+  parameters: false         # Parameter-Einstellungen ausblenden
+  sidePanel: true
+  presets: true
+  prompts: true
+  bookmarks: true
+  multiConvo: true
+  agents: true
 
 fileConfig:
   endpoints:
@@ -57,16 +69,9 @@ fileConfig:
     - "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     - "application/vnd.ms-excel"
     - "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-interface:
-  endpointsMenu: true
-  modelSelect: true
-  parameters: false         # Parameter-Einstellungen ausblenden
-  sidePanel: true
-  presets: true
-  prompts: true
-  bookmarks: true
-  multiConvo: true
-  agents: true
+    - "video/mp4"
+    - "video/quicktime"
+    - "video/webm"
 
 cache: true
 
@@ -90,135 +95,21 @@ endpoints:
         maxIterations: 30
 
   custom:
-    - name: "APIpie"
-      apiKey: "${APIPIE_API_KEY}"
-      baseURL: "https://apipie.ai/v1/"
-      models:
-        default:
-          - DeepSeek-R1
-          - DeepSeek-R1-Distill-Llama-70B
-          - DeepSeek-R1-Distill-Qwen-1.5B
-          - DeepSeek-R1-Distill-Qwen-14B
-          - DeepSeek-R1-Distill-Qwen-32B
-          - DeepSeek-R1-Turbo
-          - DeepSeek-V3
-          - DeepSeek-V3-0324
-          - DeepSeek-V3-p-dp
-          - Hermes-3-Llama-3.1-405B
-          # ... (weitere Modelle nach Bedarf)
-      fetch: false
-      modelDisplayLabel: "APIpie"
-
-    - name: "Perplexity"
-      apiKey: "${PERPLEXITY_API_KEY}"
-      baseURL: "https://api.perplexity.ai/"
-      models:
-        default:
-          - r1-1776
-          - sonar
-          - sonar-deep-research
-          - sonar-pro
-          - sonar-reasoning
-          - sonar-reasoning-pro
-      fetch: false
-      titleConvo: true
-      titleModel: "llama-3.1-sonar-small-128k-chat"
-      summarize: false
-      summaryModel: "llama-3.1-sonar-small-128k-chat"
-      forcePrompt: false
-      dropParams:
-        - "stop"
-        - "frequency_penalty"
-      modelDisplayLabel: "Perplexity"
-
-    - name: "SambaNova"
-      iconURL: "https://sambanova.ai/hubfs/logotype_sambanova_orange.png"
-      apiKey: "${SAMBANOVA_API_KEY}"
-      baseURL: "https://api.sambanova.ai/v1/"
-      models:
-        default:
-          - DeepSeek-R1
-          - DeepSeek-R1-Distill-Llama-70B
-          - Llama-3.1-Tulu-3-405B
-          # ... (weitere Modelle nach Bedarf)
-      fetch: false
-      titleConvo: true
-      titleModel: "Meta-Llama-3.1-8B-Instruct"
-      modelDisplayLabel: "SambaNova"
-
-    - name: "together.ai"
-      apiKey: "${TOGETHERAI_API_KEY}"
-      baseURL: "https://api.together.xyz"
-      models:
-        default:
-          - Gryphe/MythoMax-L2-13b
-          - Gryphe/MythoMax-L2-13b-Lite
-          # ... (weitere Modelle nach Bedarf)
-      fetch: false
-      titleConvo: true
-      titleModel: "togethercomputer/llama-2-7b-chat"
-      summarize: false
-      summaryModel: "togethercomputer/llama-2-7b-chat"
-      forcePrompt: false
-      modelDisplayLabel: "together.ai"
-
-    - name: "Unify"
-      apiKey: "${UNIFY_API_KEY}"
-      baseURL: "https://api.unify.ai/v0/"
-      models:
-        default:
-          - chatgpt-4o-latest@openai
-          # ... (weitere Modelle nach Bedarf)
-      fetch: false
-      titleConvo: true
-      titleModel: "gpt-4o-mini@openai"
-      dropParams:
-        - "stop"
-        - "user"
-        - "frequency_penalty"
-        - "presence_penalty"
-
-    - name: "xai"
-      apiKey: "${XAI_API_KEY}"
-      baseURL: "https://api.x.ai/v1"
-      models:
-        default:
-          - grok-2-1212
-          - grok-2-vision-1212
-          # ... (weitere Modelle nach Bedarf)
-      fetch: false
-      titleConvo: true
-      titleMethod: "completion"
-      titleModel: "grok-beta"
-      summarize: false
-      summaryModel: "grok-beta"
-      forcePrompt: false
-      modelDisplayLabel: "Grok"
-
     - name: "Mistral"
       apiKey: "${MISTRAL_API_KEY}"
       baseURL: "https://api.mistral.ai/v1"
       models:
         default:
-          - codestral-2501
-          - codestral-latest
-          - ministral-3b
-          - ministral-8b
-          - mistral-large-2411
           - mistral-large-latest
-          - mistral-small-24b-instruct-2501
           - mistral-small-latest
-          - pixtral-12b-2409
-          - pixtral-large-2411
           - pixtral-large-latest
+          - codestral-latest
       fetch: false
       titleConvo: true
       titleModel: "mistral-small-latest"
-      summarize: false
-      summaryModel: "mistral-small-latest"
-      forcePrompt: false
       modelDisplayLabel: "Mistral"
 
+    # DALL-E für Bildgenerierung
     - name: "DALL-E"
       apiKey: "${OPENAI_API_KEY}"
       baseURL: "https://api.openai.com/v1"
@@ -229,4 +120,3 @@ endpoints:
       fetch: false
       titleConvo: false
       modelDisplayLabel: "DALL-E"
-      iconURL: "https://cdn.openai.com/API/logo-assets/powered-by-openai-dark.png"
