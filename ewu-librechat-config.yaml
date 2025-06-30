@@ -1,6 +1,5 @@
 version: 1.2.5
 
-# Interface-Konfiguration auf oberster Ebene (KORRIGIERT)
 interface:
   endpointsMenu: true
   modelSelect: true
@@ -101,7 +100,6 @@ endpoints:
       titleModel: "mistral-small-latest"
       modelDisplayLabel: "Mistral"
 
-    # DALL-E für Bildgenerierung
     - name: "DALL-E"
       apiKey: "${OPENAI_API_KEY}"
       baseURL: "https://api.openai.com/v1"
