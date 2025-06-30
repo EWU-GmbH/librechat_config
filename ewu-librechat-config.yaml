@@ -31,7 +31,7 @@ fileConfig:
     anthropic:
       fileLimit: 50
       fileSizeLimit: 100
-      rateLimitCount:
+      rateLimitCount: 10000
       rateLimitDuration: 60
     Mistral:
       fileLimit: 50
