@@ -1,4 +1,4 @@
-version: 1.2.5
+version: 1.2.7
 
 interface:
   endpointsMenu: true
@@ -85,6 +85,21 @@ endpoints:
         recursionLimit: 30
         maxIterations: 30
 
+  openAI:
+    models:
+      default:
+        - gpt-4.1-nano
+        - gpt-4.1-mini
+        - gpt-4.1
+        - gpt-4o
+  
+  anthropic:
+    models:
+      default:
+        - claude-3-5-haiku-20241022
+        - claude-3-7-sonnet-20250219
+        - claude-sonnet-4-20250514
+  
   custom:
     - name: "Mistral"
       apiKey: "${MISTRAL_API_KEY}"
@@ -94,7 +109,6 @@ endpoints:
           - mistral-large-latest
           - mistral-small-latest
           - pixtral-large-latest
-          - codestral-latest
       fetch: false
       titleConvo: true
       titleModel: "mistral-small-latest"
@@ -106,7 +120,7 @@ endpoints:
       models:
         default:
           - dall-e-3
-          - dall-e-2
+          - gpt-image-1
       fetch: false
       titleConvo: false
       modelDisplayLabel: "DALL-E"
