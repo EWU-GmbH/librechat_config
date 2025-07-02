@@ -113,3 +113,10 @@ endpoints:
       fetch: false
       titleConvo: false
       modelDisplayLabel: "DALL-E"
+
+  ocr:
+  enabled: true
+  provider: mistral
+  mistral:
+    apiKey: "${MISTRAL_API_KEY}"
+    baseURL: "https://api.mistral.ai/v1"
