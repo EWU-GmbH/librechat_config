@@ -91,7 +91,10 @@ endpoints:
       apiKey: '${MISTRAL_API_KEY}'
       baseURL: 'https://api.mistral.ai/v1'
       models:
-        default: ['mistral-small-latest', 'mistral-large-latest', 'pixtral-large-latest']
+        default:
+          - mistral-large-latest
+          - mistral-small-latest
+          - pixtral-large-latest
         fetch: false
       titleConvo: true
       titleModel: 'mistral-small-latest'
