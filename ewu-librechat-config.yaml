@@ -94,7 +94,7 @@ endpoints:
         default: ['mistral-small-latest', 'mistral-large-latest', 'pixtral-large-latest']
         fetch: true
       titleConvo: true
-      titleModel: 'mistral-tiny'
+      titleModel: 'mistral-small-latest'
       modelDisplayLabel: 'Mistral'
       dropParams: ['stop', 'user', 'frequency_penalty', 'presence_penalty']
       
