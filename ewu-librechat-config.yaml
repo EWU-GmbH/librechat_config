@@ -76,10 +76,12 @@ cache: true
 
 ocr:
   enabled: true
-  provider: mistral
+  provider: 'Mistral'
   mistral:
-    apiKey: "${MISTRAL_API_KEY}"
-    baseURL: "https://api.mistral.ai/v1"
+    mistralModel: 'mistral-ocr-latest'
+    apiKey: '${MISTRAL_API_KEY}'
+    baseURL: 'https://api.mistral.ai/v1'
+    strategy: 'mistral_ocr'
 
 
 endpoints:
