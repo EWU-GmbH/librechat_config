@@ -92,7 +92,7 @@ endpoints:
       baseURL: 'https://api.mistral.ai/v1'
       models:
         default: ['mistral-small-latest', 'mistral-large-latest', 'pixtral-large-latest']
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: 'mistral-small-latest'
       modelDisplayLabel: 'Mistral'
