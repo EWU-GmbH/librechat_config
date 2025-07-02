@@ -113,8 +113,3 @@ endpoints:
       fetch: false
       titleConvo: false
       modelDisplayLabel: "DALL-E"
-  ocr:
-    mistralModel: "mistral-ocr-latest"
-    apiKey: "your-mistral-api-key"
-    baseURL: "https://api.mistral.ai/v1"
-    strategy: "mistral_ocr"
