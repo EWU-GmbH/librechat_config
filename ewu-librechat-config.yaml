@@ -14,41 +14,41 @@ interface:
 fileConfig:
   endpoints:
     all:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
     openAI:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
     google:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
     anthropic:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
     Mistral:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
     assistants:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
     custom:
-      fileLimit: 50
+      fileLimit: 500
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
-  fileLimit: 50
+  fileLimit: 500
   fileSizeLimit: 100
   rateLimitCount: 10000
   rateLimitDuration: 60
