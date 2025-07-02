@@ -75,6 +75,13 @@ fileConfig:
 cache: true
 
 endpoints:
+  mistral:
+    apiKey: "${MISTRAL_API_KEY}"
+    baseURL: "https://api.mistral.ai/v1"
+    models:
+      - mistral-large-latest
+      - mistral-small-latest
+      - pixtral-large-latest
   agents:
     recursionLimit: 30
     maxIterations: 30
@@ -86,19 +93,6 @@ endpoints:
         maxIterations: 30
   
   custom:
-    - name: "Mistral"
-      apiKey: "${MISTRAL_API_KEY}"
-      baseURL: "https://api.mistral.ai/v1"
-      models:
-        default:
-          - mistral-large-latest
-          - mistral-small-latest
-          - pixtral-large-latest
-      fetch: false
-      titleConvo: true
-      titleModel: "mistral-small-latest"
-      modelDisplayLabel: "Mistral"
-
     - name: "DALL-E"
       apiKey: "${OPENAI_API_KEY}"
       baseURL: "https://api.openai.com/v1"
