@@ -87,8 +87,8 @@ ocr:
 endpoints:
   
   agents:
-    recursionLimit: 50
-    maxIterations: 50
+    recursionLimit: 100
+    maxIterations: 100
     langgraph:
       options:
         recursionLimit: 1000
