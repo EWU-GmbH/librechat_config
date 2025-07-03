@@ -91,10 +91,10 @@ endpoints:
     maxIterations: 100
     timeout: 60000
     langgraph:
-      recursionLimit: 100
+      recursionLimit: 1000
       options:
-        recursionLimit: 100
-        maxIterations: 100
+        recursionLimit: 1000
+        maxIterations: 1000
   
   custom:
     - name: 'Mistral'
