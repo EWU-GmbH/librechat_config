@@ -87,14 +87,11 @@ ocr:
 endpoints:
   
   agents:
-    recursionLimit: 100
-    maxIterations: 100
-    timeout: 60000
     langgraph:
-      recursionLimit: 1000
       options:
         recursionLimit: 1000
         maxIterations: 1000
+    timeout: 60000
   
   custom:
     - name: 'Mistral'
