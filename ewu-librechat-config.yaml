@@ -77,7 +77,7 @@ cache: true
 ocr:
   mistralModel: "mistral-ocr-2503-ewu"
   apiKey: "${AZURE_MISTRAL_OCR_API_KEY}"
-  baseURL: "https://mistral-ocr-2503-ewu.swedencentral.models.ai.azure.com/v1/ocr"
+  baseURL: "https://mistral-ocr-2503-ewu.swedencentral.models.ai.azure.com/v1"
   strategy: "azure_mistral_ocr"
 
 
