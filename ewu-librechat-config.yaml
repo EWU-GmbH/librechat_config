@@ -78,7 +78,7 @@ ocr:
   mistralModel: "mistral-ocr-2503-ewu"
   apiKey: "${AZURE_MISTRAL_OCR_API_KEY}"
   baseURL: "https://mistral-ocr-2503-ewu.swedencentral.models.ai.azure.com/v1"
-  strategy: "custom_ocr"
+  strategy: "mistral_ocr"
   usingAzEndpoint: true
 
 
