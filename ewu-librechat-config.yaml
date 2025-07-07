@@ -79,7 +79,7 @@ ocr:
   strategy: "mistral_ocr"
   mistralModel: "mistral-ocr-2503-xwgge"
   apiKey: "${AZURE_MISTRAL_OCR_API_KEY}"
-  baseURL: "https://mistral-ocr-2503-ewu.swedencentral.models.ai.azure.com/v1"  
+  baseURL: "https://mistral-ocr-2503-xwgge.swedencentral.models.ai.azure.com/v1/ocr"  
   usingAzEndpoint: true
 
 
