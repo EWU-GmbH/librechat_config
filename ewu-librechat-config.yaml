@@ -121,3 +121,9 @@ endpoints:
       fetch: false
       titleConvo: false
       modelDisplayLabel: "DALL-E"
+mcpServers:
+  ocr:
+    type: sse
+    url: https://ocr.librechat.ai/sse
+    timeout: 60000
+
