@@ -126,4 +126,6 @@ mcpServers:
     type: sse
     url: https://ocr.librechat.ai/sse
     timeout: 60000
+    serverInstructions: true
+    iconPath: "/assets/ocr-icon.svg"
 
