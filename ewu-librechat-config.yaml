@@ -129,4 +129,6 @@ mcpServers:
     timeout: 60000
     serverInstructions: true
     iconPath: "/assets/ocr-icon.svg"
-
+balance:
+  enabled: false
+  threshold: 100
