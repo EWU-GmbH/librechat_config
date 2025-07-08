@@ -124,7 +124,7 @@ endpoints:
 mcpServers:
   ocr:
     type: sse
-    url: https://ocr.librechat.ai/sse
+    url: https://librechat-ocr-function-production.up.railway.app/sse
     timeout: 60000
     serverInstructions: true
     iconPath: "/assets/ocr-icon.svg"
