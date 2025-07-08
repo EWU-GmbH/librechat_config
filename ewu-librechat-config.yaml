@@ -121,11 +121,12 @@ endpoints:
       fetch: false
       titleConvo: false
       modelDisplayLabel: "DALL-E"
-mcpServers:
-  ocr:
-    type: sse
-    url: https://librechat-ocr-function-production.up.railway.app/sse
-    timeout: 60000
-    serverInstructions: true
-    iconPath: "/assets/ocr-icon.svg"
+
+#mcpServers:
+#  ocr:
+#    type: sse
+#    url: https://librechat-ocr-function-production.up.railway.app/sse
+#    timeout: 60000
+#    serverInstructions: true
+#    iconPath: "/assets/ocr-icon.svg"
 
