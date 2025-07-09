@@ -93,6 +93,13 @@ endpoints:
         recursionLimit: 1000
         maxIterations: 1000
     timeout: 60000
+
+  mcpServers:
+    azure_doc_intel:
+      type: "streamable-http"
+      url: "https://your-railway-url.up.railway.app/mcp"
+      timeout: 120000
+      initTimeout: 30000    
   
   custom:
     - name: 'Mistral'
@@ -122,13 +129,6 @@ endpoints:
       titleConvo: false
       modelDisplayLabel: "DALL-E"
 
-mcpServers:
-  ocr:
-    type: sse
-    url: https://librechat-ocr-function-production.up.railway.app/sse
-    timeout: 60000
-    serverInstructions: true
-    iconPath: "/assets/ocr-icon.svg"
 balance:
   enabled: false
   threshold: 100
