@@ -94,14 +94,6 @@ endpoints:
         maxIterations: 1000
     timeout: 60000
 
-  mcpServers:
-    azure_doc_intel:
-      type: "streamable-http"
-      url: "https://librechat-ocr-function-production.up.railway.app/mcp"
-      timeout: 120000
-      initTimeout: 30000
-      serverInstructions: "Use this tool to analyze documents from URLs and extract text, tables, and key-value pairs using Azure Document Intelligence."
-      chatMenu: true 
   
   custom:
     - name: 'Mistral'
@@ -134,3 +126,15 @@ endpoints:
 balance:
   enabled: false
   threshold: 100
+
+mcpServers:
+  azure_doc_intel:
+    type: "streamable-http"
+    url: "https://librechat-ocr-function-production.up.railway.app/mcp"
+    timeout: 120000
+    initTimeout: 30000
+    serverInstructions: "Use this tool to analyze documents from URLs and extract text, tables, and key-value pairs using Azure Document Intelligence."
+
+  
+
+  
