@@ -97,9 +97,11 @@ endpoints:
   mcpServers:
     azure_doc_intel:
       type: "streamable-http"
-      url: "https://your-railway-url.up.railway.app/mcp"
+      url: "https://librechat-ocr-function-production.up.railway.app/mcp"
       timeout: 120000
-      initTimeout: 30000    
+      initTimeout: 30000
+      serverInstructions: "Use this tool to analyze documents from URLs and extract text, tables, and key-value pairs using Azure Document Intelligence."
+      chatMenu: true 
   
   custom:
     - name: 'Mistral'
