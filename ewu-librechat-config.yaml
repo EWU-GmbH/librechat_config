@@ -48,10 +48,10 @@ fileConfig:
       fileSizeLimit: 100
       rateLimitCount: 10000
       rateLimitDuration: 60
-  fileLimit: 500
+  fileLimit: 5000
   fileSizeLimit: 100
   rateLimitCount: 10000
-  rateLimitDuration: 60
+  rateLimitDuration: 600
   supportedMimeTypes:
     - "image/jpeg"
     - "image/png"
