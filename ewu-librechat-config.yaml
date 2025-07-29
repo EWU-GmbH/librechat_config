@@ -75,14 +75,11 @@ fileConfig:
 cache: true
 
 ocr:
-  enabled: true
-  strategy: "mistral_ocr"
+  strategy: "azure_mistral_ocr"
   mistralModel: "mistral-ocr-2503-xwgge"
   apiKey: "${AZURE_MISTRAL_OCR_API_KEY}"
   baseURL: "https://mistral-ocr-2503-xwgge.swedencentral.models.ai.azure.com/v1"  
-  usingAzEndpoint: true
-
-
+  
 endpoints:
   
   agents:
